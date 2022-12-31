@@ -13,7 +13,7 @@ class Config:
     TESTING = True
     DEBUG = True
     SECRET_KEY = environ.get("SECRET_KEY")
-
+    
     """
     Energia Electricity Credentials
     """

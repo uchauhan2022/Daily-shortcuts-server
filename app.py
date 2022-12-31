@@ -66,4 +66,4 @@ def handle_error(error):
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    app.run(host="127.0.0.1", port=port, debug=app.config["DEBUG"])
+    app.run(host=os.environ.get("APP_HOST"), port=port, debug=app.config["DEBUG"])
