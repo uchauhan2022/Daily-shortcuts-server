@@ -24,10 +24,7 @@ limiter = Limiter(
 
 @app.route("/")
 def home():
-    metrics = helper.getElectrictyUsageInfo("12/01/22", "12/31/22")
-    data = helper.createMessageFromMetrics(metrics=metrics)
-    helper.sendNotification(title=data["title"], message=data["message"])
-    return "200"
+    return "Hello Utkarsh Chauhan"
 
 
 @app.route("/getElectricityBill", methods=["GET"])
